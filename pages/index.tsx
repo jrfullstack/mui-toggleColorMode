@@ -1,14 +1,16 @@
-import Head from 'next/head'
-import Image from 'next/image'
-import { Inter } from 'next/font/google'
-import styles from '@/styles/Home.module.css'
+import { css } from "@mui/material";
+import type { NextPage } from "next";
+import PageTitle from "../components/PageTitle";
+import ThemeUpdater from "../components/ThemeUpdater";
 
-const inter = Inter({ subsets: ['latin'] })
+const Home: NextPage = () => {
+    return (
+        <main
+            >
+            <PageTitle />
+            <ThemeUpdater />
+        </main>
+    );
+};
 
-export default function Home() {
-  return (
-    <>
-      <h1>Hola mundo</h1>
-    </>
-  )
-}
+export default Home;
